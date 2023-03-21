@@ -54,6 +54,20 @@ img {
   display: block;
   margin: 0 auto;
   box-shadow: 7px 7px 1px black;
+  opacity: 0.5;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
 }
 
 a:hover {
